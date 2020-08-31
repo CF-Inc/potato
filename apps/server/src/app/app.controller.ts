@@ -13,8 +13,8 @@ export class AppController {
   }
 
   @Post('Example')
-  updateData(@Body() Body: HelloWorld) {
-    this.appService.addData(Body);
-    return Body;
+  updateData(@Body() body: HelloWorld) {
+    this.appService.addData(body);
+    return body;
   }
 }
