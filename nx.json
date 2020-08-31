@@ -27,6 +27,9 @@
   "projects": {
     "server": {
       "tags": []
+    },
+    "prisma": {
+      "tags": []
     }
   }
 }
