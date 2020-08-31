@@ -2,7 +2,13 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getData(): { message: string } {
-    return { message: 'Welcome to server!' };
+  private data = [];
+
+  addData(newData) {
+    this.data.push(newData);
+  }
+
+  getData() {
+    return this.data;
   }
 }
